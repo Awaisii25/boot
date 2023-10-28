@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* color: white; */
+        background-color:  rgb(19, 17, 44);
+        color: white;
+    }
+    }
+    .text{
+        text-align: justify;
+    }
+    .awais{
+        background-image: url('https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg');
+        background-position: center;
+        background-size: ;
+    }
+    .hero{
+  color: white;
+    font-size: 33px;
+    position: absolute;
+    left: 39%;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+    }
+    .hero2{
+        background-color:  rgb(3, 1, 27);
+        color: white;
+    }
+    .pny{
+      transition: all 1s;
+    }
+    .pic:hover{
+      transform: translateY(10px);
+    }
+    .auto{
+background-color: rgb(37, 33, 70) ;
+
+
+    }
+    .auto ul{
+      list-style: none;
+    }
+      .auto ul li{
+        transition: all 1s;
+      }
+    
+    .auto ul li:hover{
+      text-decoration: underline;
+      transform: translateX(-10px);
+      color: rgb(65, 65, 116);
+      cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">bootstrap</a></li>
+                  <li><a class="dropdown-item" href="#">wordpress</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">tillwand.css</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="containar">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner p-4">
+                <div class="carousel-item active">
+                  <img src="https://mdbootstrap.com/img/Photos/Others/Intros/intro5a.webp" class="d-block w-100" height="90%" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://mdbcdn.b-cdn.net/wp-content/uploads/2017/10/backgound-image.jpg" class="d-block w-100" height="90%" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://blogct.creative-tim.com/blog/content/images/wordpress/2017/09/paperkit-1024x533.png" class="d-block w-100" height="90%
+                  " alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="containar p-5 hero1">
+
+        <div class="row align-items-center ">
+            <div class="col-lg-6">
+                <h1>Awais khan</h1>
+                <p class="text-secondary text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat molestiae totam esse molestias id! Sit eveniet sequi minus alias ipsam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet blanditiis debitis cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque placeat eligendi molestias quis ipsa accusamus maiores libero, repellendus pariatur veritatis? excepturi ipsum error explicabo enim, magnam quibusdam similique.</p>
+                <div class="btn btn-success fw-boldv col-lg-5">Login</div>
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary col-lg-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+     Sign in
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <label for="">Enter your Name</label>
+            <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+            <label for="">Enter your Email</label>
+            <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+            <label for="">Enter your Password</label>
+            <input class="form-control" type="password" name="" id="" placeholder="Your Name">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary btn-outline-danger">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+            <div class="col-lg-6 me-auto mt-4">
+                <img width="100%" src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=2000" alt="">
+            </div>
+        </div>
+      </div>
+        </div>
+      </div>
+      <div class="containar p-5 hero2">
+        <h1 class="displayx">Cards</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                
+                <div class="card">
+                    <img width="100%" src="https://resources.pulse.icc-cricket.com/ICC/photo/2022/01/24/5eb6d169-b427-4c3b-b7d3-6bba3787d39d/GettyImages-1352695956.jpg" alt="">
+                    <h4 class="text-center">Enroll in icc-cricket tournament</h4>
+                    <p class="text">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, officia! Quaerat reprehenderit ratione fuga quod velit, ut dignissimos culpa!</p>
+                        
+
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Enroll in icc-cricket tournament</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <label for="">Enter your Name</label>
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                    <label for="">Enter your Email</label>
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                    <label for="">Enter your Password</label>
+                                    <input class="form-control" type="password" name="" id="" placeholder="Your Name">
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Congratulation you are succcessfully Verified in icc-cricket tournament
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Closed</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary col-lg-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ragerter Now</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card">
+                    <img width="100%" src="https://imagez.tmz.com/image/ea/4by3/2021/06/03/eae07bd68d114c6c82e3f13e616eaf86_md.jpg" alt="">
+                    <h4 class="text-center">Enroll in foodball tournament</h4>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem.</p>
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Enroll in foodball tournament</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <label for="">Enter your Name</label>
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                    <label for="">Enter your Email</label>
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                    <label for="">Enter your Password</label>
+                                    <input class="form-control" type="password" name="" id="" placeholder="Your Name">
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Verified</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Congratulation you are succcessfully Verified in foodball tournament
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Closed</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary col-lg-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ragerter Now</button>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+                    <img width="100%" src="https://cdn.shopify.com/s/files/1/0449/6644/5210/files/7_blog_pic_1_480x480.png?v=1633597368" alt="">
+                     <h4 class="text-center">Enroll in Badmanton tournament</h4>
+                    <p class="text">  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, officia! Quaerat reprehenderit ratione fuga quod velit, ut dignissimos culpa!</p> 
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Pny traning Center</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <label for="">Enter your Name</label>
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                    <label for="">Enter your Email</label>
+                                    <input class="form-control" type="text" name="" id="" placeholder="Your Name">
+                                    <label for="">Enter your Password</label>
+                                    <input class="form-control" type="password" name="" id="" placeholder="Your Name">
+                                  </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Submit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              Congratulation you are succcessfully Verified in pny traning center
+                            </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Closed</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary col-lg-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Ragerter Now</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <h3 class="text-center hero">
+        <small class="text-body-secondary ">Demo class</small>
+      </h3>
+      
+      <div class="containar mt-5 mx-5 ">
+        <div class="row">
+            <div class="row g-0 bg-body-secondary position-relative">
+                <div class="col-md-6 mb-md-0 p-md-4">
+                 <video width="100%" autoplay src="https://simplexts.net/wp-content/themes/simplex/assets/img/video%20for%20marketing.mp4"></video>
+                </div>
+                <div class="col-md-6 p-4 ps-md-0">
+                  <h5 class="mt-0">Do you interested in Business..</h5>
+                  <p class="text">Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size. Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                  <a href="#" class="stretched-link">Creat your account</a>
+                </div>
+              </div>
+        </div>
+      </div>
+      <h3 class="text-center hero">
+        <small class="text-body-secondary ">Enter your date</small>
+      </h3>
+      <div class="containar awais mx-3 mt-4">
+        <div class="row p-5">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+        </div>
+      </div>
+      <h3 class="text-center hero">
+        <small class="text-body-secondary ">Lets try and enjoy the best product</small>
+      </h3>
+      <div class="containar p-5 mt-5 ">
+        
+        <div class="row">
+            <div class="col-lg-3 ">
+                <div class="card  mt-3 pic">
+               
+                <img width="100%" src="https://cdn-img1.imgworlds.com/assets/a5366382-0c26-4726-9873-45d69d24f819.jpg?key=home-gallery" alt="">
+                <h1 class="text-center">Welcome</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorem ex optio! Inventore libero fuga ullam officiis similique accusantium sequi!</p>
+                <div class="btn">
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card  mt-3 pic">
+                
+                <img width="100%" src="https://cdn-img1.imgworlds.com/assets/a5366382-0c26-4726-9873-45d69d24f819.jpg?key=home-gallery" alt="">
+                <h1 class="text-center">Welcome</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorem ex optio! Inventore libero fuga ullam officiis similique accusantium sequi!</p>
+                <div class="btn">
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card  mt-3 pic">
+                
+                <img width="100%" src="https://cdn-img1.imgworlds.com/assets/a5366382-0c26-4726-9873-45d69d24f819.jpg?key=home-gallery" alt="">
+                <h1 class="text-center">Welcome</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorem ex optio! Inventore libero fuga ullam officiis similique accusantium sequi!</p>
+                <div class="btn">
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card mt-3 pic">
+               
+                <img width="100%" src="https://cdn-img1.imgworlds.com/assets/a5366382-0c26-4726-9873-45d69d24f819.jpg?key=home-gallery" alt="">
+                <h1 class="text-center" >Welcome</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos dolorem ex optio! Inventore libero fuga ullam officiis similique accusantium sequi!</p>
+                <div class="btn">
+                    <button>Learn More</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display mt-3">
+        <h1 class="text-center ">Learn More</h1>
+      </div>
+      <div class="containar auto p-4 mt-3">
+        <div class="row">
+          <div class="col-lg-4">
+            <h1>Our services</h1>
+            <ul>
+              <li>Navbar</li>
+              <li>footer</li>
+              <li>Layout</li>
+              <li>Tables</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h1>bootstrap Cnd</h1>
+            <ul>
+              <li>link 4.3v</li>
+              <li>link 5.3v</li>
+              <li>link 3.3</li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h1>About Us</h1>
+            <ul>
+              <li>Facebook</li>
+              <li>Insta</li>
+              <li>Linkedin</li>
+              <li>twitter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+        
+      </script>
+</body>
+</html>
